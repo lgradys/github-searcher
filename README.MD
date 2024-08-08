@@ -10,6 +10,10 @@
 
 ### GET **/repos/{username}**
 
+```
+curl -X 'GET' 'http://{host}/repos/{username}' -H 'accept: application/json'
+```
+
 - status 200 (OK)
 
 ```json
