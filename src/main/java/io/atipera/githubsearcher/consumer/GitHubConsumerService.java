@@ -20,7 +20,7 @@ class GitHubConsumerService {
                         repo.name(),
                         repo.owner().login(),
                         gitHubClient.fetchBranches(username, repo.name()).stream()
-                                .map(branch -> new BranchDto(branch.name(), branch.lastCommit().sha()))
+                                .map(branch -> new BranchDto(branch.name(), branch.commit().sha()))
                                 .toList()))
                 .toList();
     }
